@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixes
+- Removes jcenter from Gradle by updating OneSignal-Android-SDK version [RNMT-2036](https://outsystemsrd.atlassian.net/browse/RNMT-2036)
+
 ## [2.11.1-OS4]
 ### Fixes
 - Change OneSignal-Android-SDK to point to newer version 3.15.5-OS2 [RNMT-1495](https://outsystemsrd.atlassian.net/browse/RNMT-1495)

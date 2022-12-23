@@ -26,8 +26,6 @@
   </engines>
 
   <platform name="android">
-
-
     <resource-file src="src/android/lib/onesignal-3.15.5-OS3.aar" target="libs/onesignal-3.15.5-OS3.aar" />
     <framework src="build-extras-onesignal.gradle" custom="true" type="gradleReference" />
 

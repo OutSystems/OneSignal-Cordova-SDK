@@ -6,9 +6,9 @@ android.defaultConfig {
 }
 
 repositories {
-   maven { url 'https://maven.google.com' }
-    flatDir {
-        dirs 'src/main/libs'
+    maven { url 'https://maven.google.com' }
+    repositories {
+        maven { url 'https://pkgs.dev.azure.com/OutSystemsRD/9e79bc5b-69b2-4476-9ca5-d67594972a52/_packaging/PublicArtifactRepository/maven/v1' }
     }
 }
 
@@ -68,7 +68,7 @@ configurations.all { resolutionStrategy {
 }}
 
 dependencies {
-    implementation (name:'onesignal-3.15.5-OS3', ext:'aar')
+    implementation("com.github.outsystems:onesignal-android-sdk:3.15.5-OS3@aar")
     implementation 'com.google.android.gms:play-services-location:15.0.0'
     implementation 'com.google.android.gms:play-services-ads-identifier:15.0.0'
     implementation 'com.google.android.gms:play-services-base:15.0.0'

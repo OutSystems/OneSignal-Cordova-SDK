@@ -28,17 +28,6 @@ def versionGroupAligns = [
     //    'version': '11.8.+'
     //],
 
-    // ### Android Support Library
-    'com.android.support': [
-        'requiredCompileSdkVersion': 28,
-        'version': '28.0.0',
-        'omitModules': ['multidex', 'multidex-instrumentation'],
-
-        // Can't use 26 of com.android.support when compileSdkVersion 25 is set
-        // The following error will be thrown if there is a mismatch here.
-        // "No resource found that matches the given name: attr 'android:keyboardNavigationCluster'"
-        'versionFallback': '26.1.+'
-    ]
 ]
 
 def resolveVersion(def versionOverride) {

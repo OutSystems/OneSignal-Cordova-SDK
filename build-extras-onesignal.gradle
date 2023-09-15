@@ -57,7 +57,7 @@ configurations.all { resolutionStrategy {
 }}
 
 dependencies {
-    implementation("com.github.outsystems:onesignal-android-sdk:3.15.5-OS3-test-5@aar")
+    implementation("com.github.outsystems:onesignal-android-sdk:3.15.5-OS3-test-6@aar")
     implementation 'com.google.android.gms:play-services-location:15.0.0'
     implementation 'com.google.android.gms:play-services-ads-identifier:15.0.0'
     implementation 'com.google.android.gms:play-services-base:15.0.0'

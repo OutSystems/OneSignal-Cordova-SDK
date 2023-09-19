@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Features
+- Replaces dependencies to android's Support Library with dependencies to AndroidX [RNMT-2824](https://outsystemsrd.atlassian.net/browse/RNMT-2824)
+
 ## [2.11.1-OS6]
 ### Features
 - Replaces dependency to Jitpack with dependency to Azure repo [RNMT-2036](https://outsystemsrd.atlassian.net/browse/RNMT-2124)

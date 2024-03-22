@@ -96,8 +96,13 @@
         <config>
             <source url="https://cdn.cocoapods.org/"/>
         </config>
-        <pods>
-            <pod name="OneSignal" spec="2.15.2" />
+        <pods use-frameworks="true">
+            <!-- 
+              After releasing the iOS SDK, the following should be used:
+
+              <pod name="OneSignalXCFramework" tag="2.16.7+1.0.0" git="https://github.com/OutSystems/OneSignal-iOS-SDK.git" /> 
+            -->
+            <pod name="OneSignalXCFramework" branch="development" git="https://github.com/OutSystems/OneSignal-iOS-SDK.git" />
         </pods>
     </podspec>
 

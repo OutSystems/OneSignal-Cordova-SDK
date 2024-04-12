@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="onesignal-cordova-plugin"
-    version="2.11.1-OS8">
+    version="2.11.1-OS9">
 
   <name>OneSignal Push Notifications</name>
   <author>Josh Kasten, Bradley Hesse, Rodrigo Gomez-Palacio</author>
@@ -97,12 +97,7 @@
             <source url="https://cdn.cocoapods.org/"/>
         </config>
         <pods use-frameworks="true">
-            <!-- 
-              After releasing the iOS SDK, the following should be used:
-
-              <pod name="OneSignalXCFramework" tag="2.16.7+1.0.0" git="https://github.com/OutSystems/OneSignal-iOS-SDK.git" /> 
-            -->
-            <pod name="OneSignalXCFramework" branch="development" git="https://github.com/OutSystems/OneSignal-iOS-SDK.git" />
+            <pod name="OneSignalXCFramework" tag="2.16.7+1.0.0" git="https://github.com/OutSystems/OneSignal-iOS-SDK.git" /> 
         </pods>
     </podspec>
 

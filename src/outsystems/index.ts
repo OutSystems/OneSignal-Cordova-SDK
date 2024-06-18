@@ -8,7 +8,7 @@ class OneSignalManagerClass {
     /**
      * Public delegate for OneSignal's handleNotificationReceived
      */    
-    notificationReceivedDelegate(jsonData: JSON) {
+    notificationReceivedDelegate(jsonData: any) {        
         this.#notificationReceivedCallback.forEach(function(callback:OneSignalCallback){
             callback.call(undefined, jsonData);
         });
@@ -17,7 +17,7 @@ class OneSignalManagerClass {
     /**
      * Public delegate for OneSignal's handleNotificationOpened
      */
-    notificationOpenedDelegate(jsonData: JSON) {
+    notificationOpenedDelegate(jsonData: any) {
         this.#notificationOpenedCallback.forEach(function(callback:OneSignalCallback){
             callback.call(undefined, jsonData);
         });
@@ -58,9 +58,6 @@ class OneSignalManagerClass {
             delete this.#notificationOpenedCallback[cbIndex];
         }
     }
-    
-    
-    
 }
 
 export const Manager = new OneSignalManagerClass();

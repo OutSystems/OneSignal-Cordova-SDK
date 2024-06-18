@@ -63,7 +63,7 @@ var __privateAdd = (obj, member, value) => member.has(obj) ? __typeError("Cannot
   }
   _notificationReceivedCallback = new WeakMap();
   _notificationOpenedCallback = new WeakMap();
-  const OneSignalPluginManager = new OneSignalManagerClass();
-  exports2.OneSignalPluginManager = OneSignalPluginManager;
+  const Manager = new OneSignalManagerClass();
+  exports2.Manager = Manager;
   Object.defineProperty(exports2, Symbol.toStringTag, { value: "Module" });
 });

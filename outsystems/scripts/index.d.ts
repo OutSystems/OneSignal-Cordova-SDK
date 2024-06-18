@@ -5,11 +5,11 @@ declare class OneSignalManagerClass {
     /**
      * Public delegate for OneSignal's handleNotificationReceived
      */
-    notificationReceivedDelegate(jsonData: JSON): void;
+    notificationReceivedDelegate(jsonData: any): void;
     /**
      * Public delegate for OneSignal's handleNotificationOpened
      */
-    notificationOpenedDelegate(jsonData: JSON): void;
+    notificationOpenedDelegate(jsonData: any): void;
     /**
      * Sets the current callback for OneSignal's Notification Received events.
      */
@@ -27,5 +27,5 @@ declare class OneSignalManagerClass {
      */
     unregisterOpenedCallback(callback: OneSignalCallback): void;
 }
-export declare const OneSignalPluginManager: OneSignalManagerClass;
+export declare const Manager: OneSignalManagerClass;
 export {};

@@ -66,7 +66,7 @@
   },
   "homepage": "https://github.com/onesignal/OneSignal-Cordova-SDK#readme",
   "scripts": {
-    "build": "rimraf ./dist && vite build",
+    "build": "rimraf ./outsystems/scripts && vite build",
     "test": "jest"
   },
   "devDependencies": {

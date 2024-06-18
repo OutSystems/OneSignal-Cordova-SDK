@@ -5,16 +5,13 @@ export default defineConfig({
   plugins: [dts()],
   build: {
     minify: false,
-    outDir: 'outsystems',
+    outDir: 'outsystems/scripts',
     target: 'es2020',
     lib: {
       entry: './src/outsystems/index.ts',
       name: 'OSOneSignal',
       fileName: (format) => `manager.${format === 'es' ? 'mjs' : format === 'cjs' ? 'cjs' : 'js'}`,
       formats: ['umd'],
-    },
-    rollupOptions: {
-      external: ['cordova'],
-    },
+    }
   },
 });

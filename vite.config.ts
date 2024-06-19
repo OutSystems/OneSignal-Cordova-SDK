@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [dts()],
   build: {
     minify: false,
-    outDir: 'outsystems/scripts',
+    outDir: 'outsystems/scripts/ODC',
     target: 'es2020',
     lib: {
       entry: './src/outsystems/index.ts',

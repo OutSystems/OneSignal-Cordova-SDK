@@ -1,7 +1,7 @@
 import { OneSignalCallback } from "./definitions";
 
-var notificationReceivedCallback: OneSignalCallback[] = [];
-var notificationOpenedCallback: OneSignalCallback[] = [];
+let notificationReceivedCallback: OneSignalCallback[] = [];
+let notificationOpenedCallback: OneSignalCallback[] = [];
 
 /**
  * Public delegate for OneSignal's handleNotificationReceived
@@ -39,10 +39,9 @@ export function setNotificationOpenedCallback(callback:OneSignalCallback) {
  * Unregister the old callback of OneSignal's Notification Received 
  */
 export function unregisterReceivedCallback(callback:OneSignalCallback) {
-    var cbIndex = notificationReceivedCallback.indexOf(callback);
+    let cbIndex = notificationReceivedCallback.indexOf(callback);
     if(cbIndex >= 0) {
-        //notificationReceivedCallback[cbIndex] = undefined;
-        delete notificationReceivedCallback[cbIndex];
+        notificationReceivedCallback.splice(cbIndex, 1);
     }
 }
 
@@ -50,10 +49,9 @@ export function unregisterReceivedCallback(callback:OneSignalCallback) {
  * Unregister the old callback of OneSignal's Notification Opened
  */
 export function unregisterOpenedCallback(callback:OneSignalCallback) {
-    var cbIndex = notificationOpenedCallback.indexOf(callback);
+    let cbIndex = notificationOpenedCallback.indexOf(callback);
     if(cbIndex >= 0) {
-        //notificationOpenedCallback[cbIndex] = undefined;
-        delete notificationOpenedCallback[cbIndex];
+        notificationOpenedCallback.splice(cbIndex, 1);
     }
 
 }

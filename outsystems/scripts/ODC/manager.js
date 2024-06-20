@@ -2,8 +2,8 @@
   typeof exports === "object" && typeof module !== "undefined" ? factory(exports) : typeof define === "function" && define.amd ? define(["exports"], factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, factory(global.OSOneSignal = {}));
 })(this, function(exports2) {
   "use strict";
-  var notificationReceivedCallback = [];
-  var notificationOpenedCallback = [];
+  let notificationReceivedCallback = [];
+  let notificationOpenedCallback = [];
   function notificationReceivedDelegate(jsonData) {
     notificationReceivedCallback.forEach(function(callback) {
       callback(jsonData);
@@ -21,15 +21,15 @@
     notificationOpenedCallback.push(callback);
   }
   function unregisterReceivedCallback(callback) {
-    var cbIndex = notificationReceivedCallback.indexOf(callback);
+    let cbIndex = notificationReceivedCallback.indexOf(callback);
     if (cbIndex >= 0) {
-      delete notificationReceivedCallback[cbIndex];
+      notificationReceivedCallback.splice(cbIndex, 1);
     }
   }
   function unregisterOpenedCallback(callback) {
-    var cbIndex = notificationOpenedCallback.indexOf(callback);
+    let cbIndex = notificationOpenedCallback.indexOf(callback);
     if (cbIndex >= 0) {
-      delete notificationOpenedCallback[cbIndex];
+      notificationOpenedCallback.splice(cbIndex, 1);
     }
   }
   exports2.notificationOpenedDelegate = notificationOpenedDelegate;

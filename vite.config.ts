@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     minify: false,
     outDir: 'outsystems/scripts/ODC',
-    target: 'es2020',
+    target: 'modules',
     lib: {
       entry: './src/outsystems/index.ts',
       name: 'OSOneSignal',

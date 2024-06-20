@@ -18,15 +18,15 @@ var onReady = function(scope) {
         }
     });
     
-    OSOneSignal.Manager.setNotificationReceivedCallback(scope.handleNotificationReceived);
-    OSOneSignal.Manager.setNotificationOpenedCallback(scope.handleNotificationOpened);
+    OSOneSignal.setNotificationReceivedCallback(scope.handleNotificationReceived);
+    OSOneSignal.setNotificationOpenedCallback(scope.handleNotificationOpened);
 
 }
 
 var onDestroy = function(scope) {
     console.log("onDestroy scope");
-    OSOneSignal.Manager.unregisterReceivedCallback(scope.handleNotificationReceived);
-    OSOneSignal.Manager.unregisterOpenedCallback(scope.handleNotificationOpened);
+    OSOneSignal.unregisterReceivedCallback(scope.handleNotificationReceived);
+    OSOneSignal.unregisterOpenedCallback(scope.handleNotificationOpened);
 }
 
 OSCommonPlugin.PluginManager.createScope(`OneSignalPlugin_${$parameters.Token}`,  onReady, onDestroy);

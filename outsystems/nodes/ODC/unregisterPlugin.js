@@ -1,0 +1,1 @@
+OSCommonPlugin.PluginManager.destroyScope(`OneSignalPlugin_${$parameters.Token}`);

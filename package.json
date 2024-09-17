@@ -1,5 +1,5 @@
 {
-  "version": "2.11.1-OS11",
+  "version": "2.11.1-OS12",
   "name": "onesignal-cordova-plugin",
   "cordova_name": "OneSignal Push Notifications",
   "description": "OneSignal is a high volume Push Notification service for mobile apps. In addition to basic notification delivery, OneSignal also provides tools to localize, target, schedule, and automate notifications that you send.",
@@ -64,5 +64,23 @@
   "bugs": {
     "url": "https://github.com/onesignal/OneSignal-Cordova-SDK/issues"
   },
-  "homepage": "https://github.com/onesignal/OneSignal-Cordova-SDK#readme"
+  "homepage": "https://github.com/onesignal/OneSignal-Cordova-SDK#readme",
+  "scripts": {
+    "build": "vite build",
+    "test": "jest --coverage --ci"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11",
+    "ts-jest": "^29.1.2",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.12.12",
+    "typescript": "~5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-dts": "^3.9.1",
+    "rimraf": "4.3.1",
+    "eslint": "^7.11.0",
+    "prettier": "~2.3.0",
+    "@types/cordova": "^11.0.3"
+  }
 }

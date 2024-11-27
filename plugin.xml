@@ -2,8 +2,8 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="onesignal-cordova-plugin"
-    version="2.11.1-OS12">
-
+    version="2.11.1-OS13">
+  
   <name>OneSignal Push Notifications</name>
   <author>Josh Kasten, Bradley Hesse, Rodrigo Gomez-Palacio</author>
 
@@ -54,6 +54,7 @@
           <category android:name="$PACKAGE_NAME" />
         </intent-filter>
       </receiver>
+      <receiver android:exported="false" android:name="com.onesignal.NotificationDismissReceiver" />
     </config-file>
 
     <source-file src="src/android/com/plugin/gcm/OneSignalPush.java" target-dir="src/com/plugin/gcm/" />

@@ -98,7 +98,7 @@
             <source url="https://cdn.cocoapods.org/"/>
         </config>
         <pods use-frameworks="true">
-            <pod name="OneSignalXCFramework" tag="fix/RMET-4328/open-url" git="https://github.com/OutSystems/OneSignal-iOS-SDK.git" /> 
+            <pod name="OneSignalXCFramework" tag="test/RMET-4328/signed-framework" git="https://github.com/OutSystems/OneSignal-iOS-SDK.git" /> 
         </pods>
     </podspec>
 

@@ -67,7 +67,8 @@
   "homepage": "https://github.com/onesignal/OneSignal-Cordova-SDK#readme",
   "scripts": {
     "build": "vite build",
-    "test": "jest --coverage --ci"
+    "test": "jest --coverage --ci",
+    "capacitor:update:after": "node capacitor_hooks/insert_azure_repository.js"
   },
   "devDependencies": {
     "jest": "^29.7.0",

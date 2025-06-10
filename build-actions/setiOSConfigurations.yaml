@@ -1,0 +1,21 @@
+platforms:
+  ios:    
+    builds:
+      Debug:
+        entitlements:
+            entries:
+              - aps-environment: 'development'
+        plist:
+          - replace: true
+            entries:
+              - UIBackgroundModes:
+                - remote-notification
+      Release:
+        entitlements:
+            entries:
+              - aps-environment: 'production'
+        plist:
+          - replace: true
+            entries:
+              - UIBackgroundModes:
+                - remote-notification

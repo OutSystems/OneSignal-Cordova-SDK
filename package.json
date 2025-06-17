@@ -1,5 +1,5 @@
 {
-  "version": "2.11.1-OS15",
+  "version": "2.11.1-OS16",
   "name": "onesignal-cordova-plugin",
   "cordova_name": "OneSignal Push Notifications",
   "description": "OneSignal is a high volume Push Notification service for mobile apps. In addition to basic notification delivery, OneSignal also provides tools to localize, target, schedule, and automate notifications that you send.",
@@ -68,7 +68,7 @@
   "scripts": {
     "build": "vite build",
     "test": "jest --coverage --ci",
-    "capacitor:update:after": "node capacitor_hooks/insert_azure_repository.js"
+    "capacitor:update:after": "node capacitor_hooks/insert_azure_repository.js; node capacitor_hooks/sethandleApplicationNotifications.js"
   },
   "devDependencies": {
     "jest": "^29.7.0",

@@ -1,5 +1,7 @@
-android.defaultConfig.manifestPlaceholders.onesignal_app_id = '', // Use from js code
-android.defaultConfig.manifestPlaceholders.onesignal_google_project_number = 'REMOTE'
+android.defaultConfig {
+  manifestPlaceholders.onesignal_app_id = ''
+  manifestPlaceholders.onesignal_google_project_number = 'REMOTE'
+}
 
 repositories {
     maven { url 'https://maven.google.com' }

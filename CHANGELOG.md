@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.11.1-OS17]
+### Fixes
+- android | Override of `manifestPlaceholders` breaking OutSystems Capacitor builds (https://outsystemsrd.atlassian.net/browse/RMET-4863).
+
 ## [2.11.1-OS16]
 ### Fixes
 - ios | Add hook to add set `handleApplicationNotifications` (https://outsystemsrd.atlassian.net/browse/RMET-4269).

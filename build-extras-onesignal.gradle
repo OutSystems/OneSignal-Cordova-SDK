@@ -1,8 +1,6 @@
 android.defaultConfig {
-  manifestPlaceholders = [
-    onesignal_app_id: '', // Use from js code
-    onesignal_google_project_number: 'REMOTE'
-  ]
+  manifestPlaceholders.onesignal_app_id = ''
+  manifestPlaceholders.onesignal_google_project_number = 'REMOTE'
 }
 
 repositories {
@@ -57,7 +55,7 @@ configurations.all { resolutionStrategy {
 }}
 
 dependencies {
-    implementation("com.github.outsystems:onesignal-android-sdk:3.15.5-OS5@aar")
+    implementation("com.github.outsystems:onesignal-android-sdk:3.15.5-OS6@aar")
     implementation 'com.google.android.gms:play-services-location:21.0.1'
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
     implementation 'com.google.android.gms:play-services-base:18.2.0'

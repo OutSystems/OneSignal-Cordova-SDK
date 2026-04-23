@@ -7,7 +7,7 @@ let package = Package(
     products: [
         .library(
             name: "onesignal-cordova-plugin",
-            targets: ["OneSignalPushPlugin"])
+            targets: ["onesignal-cordova-plugin"])
     ],
     dependencies: [
         .package(url: "https://github.com/apache/cordova-ios.git", branch: "master"),
@@ -17,7 +17,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "OneSignalPushPlugin",
+            name: "onesignal-cordova-plugin",
             dependencies: [
                 .product(name: "Cordova", package: "cordova-ios"),
                 .product(name: "OneSignal", package: "OneSignal-iOS-SDK")

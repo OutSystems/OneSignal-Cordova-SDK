@@ -23,9 +23,6 @@ let package = Package(
                 .product(name: "OneSignal", package: "OneSignal-iOS-SDK")
             ],
             path: "src/ios",
-            publicHeadersPath: ".",
-            linkerSettings: [
-                .linkedFramework("SystemConfiguration")
-            ])
+            publicHeadersPath: ".")
     ]
 )

@@ -31,7 +31,10 @@ For account issues and support please contact OneSignal support from the [OneSig
 #### Demo Project
 To make things easier, we have published demo projects for [Cordova](https://github.com/OneSignal/OneSignal-Cordova-Example) and [Ionic](https://github.com/OneSignal/OneSignal-Ionic-Example)
 
-#### Supports:
+#### Supports
+
+This fork supports:
+
 * OutSystems O11 / ODC with Capacitor and Cordova.
 * Android 9 (API Level 28) through 16 (API Level 36).
 * iOS 15 - 26

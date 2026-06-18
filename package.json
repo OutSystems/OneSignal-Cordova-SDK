@@ -68,7 +68,8 @@
   "scripts": {
     "build": "vite build",
     "test": "jest --coverage --ci",
-    "capacitor:update:after": "node capacitor_hooks/insert_azure_repository.js; node capacitor_hooks/sethandleApplicationNotifications.js"
+    "capacitor:update:after": "node capacitor_hooks/insert_azure_repository.js; node capacitor_hooks/sethandleApplicationNotifications.js",
+    "release": "node scripts/release.js"
   },
   "devDependencies": {
     "@octokit/rest": "^21.0.2",

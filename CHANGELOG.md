@@ -1,3 +1,12 @@
+## [2.11.1-OS20]
+
+### 2026-06-19
+
+- ci: Trigger release on push to outsystems (#50)
+- docs: Update PR template
+- ci: Release and Changelog automation (#49)
+
+
 # Changelog (old)
 =========
 

@@ -72,7 +72,7 @@
                 <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods use-frameworks="true">
-                <pod name="OneSignalXCFramework" tag="2.16.7-outsystems.1" git="https://github.com/OutSystems/OneSignal-iOS-SDK.git" nospm="true"/>
+                <pod name="OneSignalXCFramework" branch="fix/RMET-5364/uiscene-migration" git="https://github.com/OutSystems/OneSignal-iOS-SDK.git" nospm="true"/>
             </pods>
         </podspec>
     </platform>

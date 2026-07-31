@@ -1,3 +1,11 @@
+## [2.11.1-OS21]
+
+### 2026-07-31
+
+- fix: point OneSignalXCFramework pod to UIScene fix branch for testing
+- chore: update native ios lib to latest tag
+
+
 ## [2.11.1-OS20]
 
 ### 2026-06-19

@@ -13,7 +13,7 @@ let package = Package(
         .package(url: "https://github.com/apache/cordova-ios.git", branch: "master"),
         .package(
             url: "https://github.com/OutSystems/OneSignal-iOS-SDK.git",
-            exact: "2.16.7-outsystems.1")
+            exact: "2.16.7-outsystems.2")
     ],
     targets: [
         .target(

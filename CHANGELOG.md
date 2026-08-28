@@ -1,3 +1,10 @@
+## [2.11.1-OS23]
+
+### 2026-08-28
+
+- fix(ios): Use latest OneSignal lib for SPM (#53)
+
+
 ## [2.11.1-OS22]
 
 ### 2026-08-07

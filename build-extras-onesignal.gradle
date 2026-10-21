@@ -66,3 +66,10 @@ dependencies {
     api 'com.google.firebase:firebase-iid:21.1.0'
     implementation 'androidx.cardview:cardview:1.0.0'
 }
+
+// Cordova apps only get this file, so it writes its own R8 rules where clean won't remove them.
+// firebase-messaging 24.0.1 brings firebase-components 18.0.0, which loses these constructors under AGP 9.
+def r8Rules = new File(rootDir, '.gradle/onesignal-rules.pro')
+r8Rules.parentFile.mkdirs()
+r8Rules.text = '-keep class * implements com.google.firebase.components.ComponentRegistrar { <init>(); }\n'
+android.buildTypes.release.proguardFile(r8Rules)

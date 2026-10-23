@@ -1,3 +1,10 @@
+## [2.11.1-OS24]
+
+### 2026-10-23
+
+- fix(android): keep Firebase registrars from R8
+
+
 ## [2.11.1-OS23]
 
 ### 2026-08-28

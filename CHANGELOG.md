@@ -1,10 +1,3 @@
-## [2.11.1-OS25]
-
-### 2026-11-05
-
-- fix(android): downscale notification background image to avoid Android 17 custom view size limits [RMET-5255](https://outsystemsrd.atlassian.net/browse/RMET-5255)
-
-
 ## [2.11.1-OS24]
 
 ### 2026-10-23

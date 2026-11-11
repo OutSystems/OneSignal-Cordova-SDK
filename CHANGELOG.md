@@ -1,3 +1,10 @@
+## [2.11.1-OS25]
+
+### 2026-11-11
+
+- fix(android): downscale and sample notification images (#56)
+
+
 ## [2.11.1-OS24]
 
 ### 2026-10-23
